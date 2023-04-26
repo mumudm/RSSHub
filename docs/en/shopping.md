@@ -36,6 +36,66 @@ Parameter `time` only works when `mostwanted` is chosen as the category.
 
 </RouteEn>
 
+## Arcteryx
+
+### New Arrivals
+
+<RouteEn author="NavePnow" example="/arcteryx/new-arrivals/us/mens" path="/arcteryx/new-arrivals/:country/:gender" :paramsDesc="['country', 'gender']">
+
+Country
+
+| United States | Canada | United Kingdom |
+| ------------- | ------ | -------------- |
+| us            | ca     | gb             |
+
+gender
+
+| male | female |
+| ---- | ------ |
+| mens | womens |
+
+::: tip
+
+Parameter `country` can be found within the url of `Arcteryx` website.
+
+:::
+
+</RouteEn>
+
+### Outlet
+
+<RouteEn author="NavePnow" example="/arcteryx/outlet/us/mens" path="/arcteryx/outlet/:country/:gender" :paramsDesc="['country', 'gender']">
+
+Country
+
+| United States | Canada | United Kingdom |
+| ------------- | ------ | -------------- |
+| us            | ca     | gb             |
+
+gender
+
+| male | female |
+| ---- | ------ |
+| mens | womens |
+
+::: tip
+
+Parameter `country` can be found within the url of `Arcteryx` website.
+
+:::
+
+</RouteEn>
+
+### Regear New Arrivals
+
+<RouteEn author="NavePnow" example="/arcteryx/regear/new-arrivals" path="/arcteryx/regear/new-arrivals" />
+
+## Bellroy
+
+### New Releases
+
+<RouteEn author="NavePnow" example="/bellroy/new-releases" path="/bellroy/new-releases" />
+
 ## booth.pm
 
 ### Shop
@@ -77,15 +137,19 @@ Parameter `time` only works when `mostwanted` is chosen as the category.
 
 <RouteEn author="DIYgod" example="/hotukdeals/hot" path="/hotukdeals/:type" :paramsDesc="['should be one of highlights, hot, new, discussed']"/>
 
+### hottest
+
+<RouteEn author="DIYgod" example="/hotukdeals/hottest" path="/hotukdeals/hottest"></RouteEn>
+
 ## IKEA
 
 ### UK - New Product Release
 
-<RouteEn author="HenryQW" example="/ikea/uk/new" path="/ikea/uk/new"/>
+<RouteEn author="HenryQW" example="/ikea/gb/new" path="/ikea/gb/new"/>
 
 ### UK - Offers
 
-<RouteEn author="HenryQW" example="/ikea/uk/offer" path="/ikea/uk/offer"/>
+<RouteEn author="HenryQW" example="/ikea/gb/offer" path="/ikea/gb/offer"/>
 
 ## LeBonCoin
 
@@ -111,14 +175,95 @@ All brands, see [Brand list](https://www.mercari.com/jp/brand/)
 
 </RouteEn>
 
+## MyFigureCollection
+
+### Activity
+
+<RouteEn author="nczitzk" example="/myfigurecollection/activity" path="/myfigurecollection/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?" :paramsDesc="['Category, Figures by default', 'Language, as above, `en` by default', 'Latest Additions, on as `1` by default, off as `0`', 'Changes, on as `1` by default, off as `0`', 'Alerts, on as `1` by default, off as `0`', 'Pictures, on as `1` by default, off as `0`']">
+
+Category
+
+| Figures | Goods | Media |
+| ------- | ----- | ----- |
+| 0       | 1     | 2     |
+
+Language
+
+| Id  | Language   |
+| --- | ---------- |
+|     | en         |
+| de  | Deutsch    |
+| es  | Español    |
+| fi  | Suomeksi   |
+| fr  | Français   |
+| it  | Italiano   |
+| ja  | 日本語     |
+| nl  | Nederlands |
+| no  | Norsk      |
+| pl  | Polski     |
+| pt  | Português  |
+| ru  | Русский    |
+| sv  | Svenska    |
+| zh  | 中文       |
+
+</RouteEn>
+
+### Database
+
+<RouteEn author="nczitzk" example="/myfigurecollection/figure" path="/myfigurecollection/:category?/:language?" :paramsDesc="['Category, Figures by default', 'Language, as above, `en` by default']">
+
+| Figures | Goods | Media |
+| ------- | ----- | ----- |
+| figures | goods | media |
+
+</RouteEn>
+
+### Pictures
+
+<RouteEn author="nczitzk" example="/myfigurecollection/potd" path="/myfigurecollection/:category?/:language?" :paramsDesc="['Category, Pictures OTD by default', 'Language, as above, `en` by default']">
+
+| Pictures OTD | Pictures OTW | Pictures OTM |
+| ------------ | ------------ | ------------ |
+| potd         | potw         | potm         |
+
+</RouteEn>
+
+## Patagonia
+
+### New Arrivals
+
+<RouteEn author="NavePnow" example="/patagonia/new-arrivals/mens" path="/patagonia/new-arrivals/:category" :paramsDesc="['category, see below']">
+
+| Men's | Women's | Kids' & Baby | Packs & Gear |
+| ----- | ------- | ------------ | ------------ |
+| mens  | womens  | kids         | luggage      |
+
+</RouteEn>
+
+
 ## ShopBack
 
 ### Store
 
 <RouteEn author="nczitzk" example="/shopback/shopee-mart" path="/shopback/:store" :paramsDesc="['Store, can be found in URL']"/>
 
+## Snow Peak
+
+### New Arrivals(USA)
+
+<RouteEn author="NavePnow" example="/snowpeak/us/new-arrivals" path="/snowpeak/us/new-arrivals"/>
+
 ## The Independent
 
 ### PS5 stock UK
 
 <RouteEn author="DIYgod" example="/independent/ps5-stock-uk" path="/independent/ps5-stock-uk"/>
+
+## Zagg
+
+### New Arrivals
+
+<RouteEn author="NavePnow" example="/zagg/new-arrivals/brand=164&cat=3038,3041" path="/zagg/new-arrivals/:query?" :paramsDesc="['query, search page querystring']"/>
+
+For instance, in <https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3041>, the query is `brand=164&cat=3038%2C3041`
+
